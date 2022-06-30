@@ -1,0 +1,27 @@
+{
+    "name": "koa_mock_server",
+    "version": "1.0.0",
+    "description": "prv mock server",
+    "main": "index.js",
+    "dependencies": {
+        "@koa/cors": "^3.3.0",
+        "chokidar": "^3.5.3",
+        "commander": "^9.3.0",
+        "koa": "^2.13.4",
+        "koa-body": "^5.0.0",
+        "koa-joi-swagger": "^1.1.1",
+        "mockjs": "^1.1.0",
+        "require-all": "^3.0.0"
+    },
+    "devDependencies": {
+        "@types/mockjs": "^1.0.6"
+    },
+    "scripts": {
+        "start": "node ./src/server_app.js PROXY=HKPriProxy.aia.biz:10938",
+        "hotstart": "node ./src/watch_file.js PROXY=HKPriProxy.aia.biz:10938",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
